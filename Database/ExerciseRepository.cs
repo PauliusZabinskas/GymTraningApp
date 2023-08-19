@@ -27,8 +27,6 @@ public class ExerciseRepository : IExerciseRepository
 
     public async Task<Exercise> AddExercise(Exercise exercise)
     {
-        int currentSessionId = _currentSession.SessionId;
-        exercise.GymSessionID = currentSessionId;
 
         EntityEntry<Exercise> created = await _dbContext.AddAsync(exercise);
         await _dbContext.SaveChangesAsync();
@@ -47,6 +45,8 @@ public class ExerciseRepository : IExerciseRepository
     {
 
         return await _dbContext.Exercises.FindAsync(exerciseId);
+        
+
     }
 
     public async Task<IEnumerable<Exercise>> ListExercises()

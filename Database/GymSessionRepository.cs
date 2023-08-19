@@ -43,17 +43,28 @@ public class GymSessionRepository : IGymSessionRepository
         // Find the session
         GymSession? session = await _dbContext.GymSessions.FindAsync(sessionId);
         // remove the session
-        _dbContext.GymSessions.Remove(session);
-        // save changes
-        await _dbContext.SaveChangesAsync();
+        if (session != null & _currentUser.UserId == session.OwnerId)
+        {
+            _dbContext.GymSessions.Remove(session);
+            // save changes
+            await _dbContext.SaveChangesAsync();
+        }
+        
     }
 
     public async Task<GymSession?> GetSession(int sessionId)
     {
-        
-        return await _dbContext.GymSessions
+
+        GymSession session = await _dbContext.GymSessions.FindAsync(sessionId);
+
+        if (_currentUser.UserId == session.OwnerId)
+        {
+            return await _dbContext.GymSessions
         .Include(session => session.Exercises)
         .FirstOrDefaultAsync(x => x.Id == sessionId);
+        }
+
+        return null;
 
     }
 
@@ -77,9 +88,9 @@ public class GymSessionRepository : IGymSessionRepository
         
     }
 
-    public async Task AppendExercise(GymSession session)
-    {
-        _dbContext.GymSessions.AddAsync(session);
-        await _dbContext.SaveChangesAsync();
-    }
+    // public async Task AppendExercise(GymSession session)
+    // {
+    //     _dbContext.GymSessions.AddAsync(session);
+    //     await _dbContext.SaveChangesAsync();
+    // }
 }

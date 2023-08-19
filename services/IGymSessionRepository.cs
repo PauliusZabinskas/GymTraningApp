@@ -38,5 +38,5 @@ public interface IGymSessionRepository
     /// <param name="sessionId">The session ID of the session to delete</param>
     /// <returns>Awaitable task with no result</returns>
     Task DeleteSession(int sessionId);
-    Task AppendExercise(GymSession session);
+    // Task AppendExercise(GymSession session);
 }

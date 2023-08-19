@@ -19,14 +19,14 @@ namespace GymApp.Controllers
            
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateExercise([FromBody] CreateExerciseDTO exerciseDTO)
+        [HttpPost("{sessionID}")]
+        public async Task<IActionResult> CreateExercise([FromRoute] int sessionID,[FromBody] CreateExerciseDTO exerciseDTO)
         {
 
             Exercise exercise = new ()
             {
                 Name = exerciseDTO.Name,
-                GymSessionID = exerciseDTO.GymSessionID
+                GymSessionID = sessionID
             };
             
             await _repository.AddExercise(exercise);
