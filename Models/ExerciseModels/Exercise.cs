@@ -12,5 +12,5 @@ public class Exercise
     public string? Name { get; set; } = null!;
     
     [ForeignKey(nameof(GymSessionID))]
-    public int GymSessionID { get; set; }
+    public int? GymSessionID { get; set; }
 }

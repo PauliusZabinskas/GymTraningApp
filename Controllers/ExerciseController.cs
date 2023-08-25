@@ -1,11 +1,13 @@
 using AutoMapper;
 using GymApp.Models.ExerciseModels;
 using GymApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymApp.Controllers
 {
     [Route("api/[controller]/[action]")]
+    [Authorize]
     public class ExerciseController : Controller
     {
         private readonly IExerciseRepository _repository;
@@ -40,8 +42,8 @@ namespace GymApp.Controllers
             return Ok(returnDTO);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllExercises()
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAllExercises([FromRoute] int id)
         {
             IEnumerable<Exercise> returnList = await _repository.ListExercises();
             return Ok(returnList);

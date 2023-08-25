@@ -17,10 +17,10 @@ namespace GymApp.Database;
 public class GymSessionRepository : IGymSessionRepository
 {
     private readonly ApplicationDbContext _dbContext;
-    private readonly ICurrentUser _currentUser;
+    private readonly ICurrentUserService _currentUser;
     
 
-    public GymSessionRepository(ApplicationDbContext dbContext, ICurrentUser currentUser)
+    public GymSessionRepository(ApplicationDbContext dbContext, ICurrentUserService currentUser)
     {
         _dbContext = dbContext;
         _currentUser = currentUser;

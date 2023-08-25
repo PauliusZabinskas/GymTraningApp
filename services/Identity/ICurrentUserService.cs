@@ -1,6 +1,6 @@
 namespace GymApp.Services;
 
-public interface ICurrentUser
+public interface ICurrentUserService
 {
     string? UserId { get; }
 }

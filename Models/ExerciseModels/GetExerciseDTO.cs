@@ -12,6 +12,6 @@ public class GetExerciseDTO : BaseExerciseDTO
 {
     public int Id { get; set; }
 
-    public int GymSessionID { get; set; }
+  
 
 }

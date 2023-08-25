@@ -10,7 +10,7 @@ namespace GymApp.Models.Exercise.DTOs
     public abstract class BaseExerciseDTO
     {
         [Required]
-        public string Name { get; set; }
-        public int GymSessionID { get; set; }
+        public string Name { get; set; } = null!;
+        public int? GymSessionID { get; set; } = null!;
     }
 }
