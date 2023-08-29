@@ -27,7 +27,7 @@ public class ExerciseRepository : IExerciseRepository
 
     public async Task<Exercise> AddExercise(Exercise exercise)
     {
-
+        
         EntityEntry<Exercise> created = await _dbContext.AddAsync(exercise);
         await _dbContext.SaveChangesAsync();
         return created.Entity;

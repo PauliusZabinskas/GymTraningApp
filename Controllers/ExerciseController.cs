@@ -43,7 +43,15 @@ namespace GymApp.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAllExercises([FromRoute] int id)
         {
+
+
             IEnumerable<Exercise> returnList = await _repository.ListExercises();
+
+            if (returnList == null)
+                return NoContent();
+            
+            
+
             return Ok(returnList);
         }
 
