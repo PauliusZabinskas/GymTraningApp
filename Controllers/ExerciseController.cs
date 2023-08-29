@@ -47,9 +47,6 @@ namespace GymApp.Controllers
 
             IEnumerable<Exercise> returnList = await _repository.ListExercises();
 
-            if (returnList == null)
-                return NoContent();
-            
             
 
             return Ok(returnList);
