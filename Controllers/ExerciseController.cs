@@ -11,8 +11,6 @@ namespace GymApp.Controllers
     public class ExerciseController : Controller
     {
         private readonly IExerciseRepository _repository;
-        
-
 
         public ExerciseController(IExerciseRepository repository)
         {
