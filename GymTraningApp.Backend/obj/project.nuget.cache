@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FCUk71j2khGTognaojOB6ar6j8pKQXG+52SqDXJm5VZnDZ1xLu0dp3/yR7dV740Mk4ZD1CvC/1YpTwXGwQGtZg==",
+  "dgSpecHash": "ZfhmRql66syB7YyVn3TgRK04fzFJS+vIHrz7qCq6W+dbu52bQI6I7Qor1UJgriH27sEs3CIolkTQabOBbKqs3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymApp.csproj",
+  "projectFilePath": "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\GymApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zabin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\zabin\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",

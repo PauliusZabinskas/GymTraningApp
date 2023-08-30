@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymApp.csproj": {}
+    "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\GymApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymApp.csproj": {
+    "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\GymApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymApp.csproj",
+        "projectUniqueName": "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\GymApp.csproj",
         "projectName": "GymApp",
-        "projectPath": "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymApp.csproj",
+        "projectPath": "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\GymApp.csproj",
         "packagesPath": "C:\\Users\\zabin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\obj\\",
+        "outputPath": "c:\\Users\\zabin\\This Laptop Storage\\Development env\\Cv projects\\GymApp\\GymTraningApp\\GymTraningApp.Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
