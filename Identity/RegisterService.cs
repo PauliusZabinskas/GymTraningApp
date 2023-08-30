@@ -22,6 +22,9 @@ public class UserRegisterService : IUserRegisterService
 
         IdentityResult result = await _userManager.CreateAsync(user, password);
 
+        if(result.Succeeded)
+            await _userManager.AddToRoleAsync(user,"User");
+
         return result.Succeeded;
     }
 }
